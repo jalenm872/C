@@ -8,7 +8,7 @@ int main(){
     float ftemp;
     
     //Ask user for temp in C
-    std::cout << "Enter Celsius Temperature: \n";
+    //std::cout << "Enter Celsius Temperature: \n";
     
     //User input as temp1
     std::cin >> ctemp;

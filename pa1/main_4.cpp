@@ -10,9 +10,6 @@ int main()
     int c_variable;
     char operator_variable;
     
-    //Ask user for a_variable, b_variable, and operator
-    std::cout << "Enter two intergers and an operator: \nExample ( 2 5 * )\n";
-    
     //Set user inputs to a_varibale and b_variable
     std::cin >> a_variable >> b_variable >> operator_variable;
     

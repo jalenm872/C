@@ -8,9 +8,6 @@ int main()
     int a_variable; //User Interger
     int b_variable; //Output for odd or even
 
-    //Ask user for interger
-    std::cout << "Enter an interger: \n";
-    
     //Set user input as a_variable
     std::cin >> a_variable;
 

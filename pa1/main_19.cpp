@@ -10,7 +10,7 @@ int main()
     int angle3;
 
     //Ask user for input for degree
-    std::cout << "Enter three interior angles: \n";
+    //std::cout << "Enter three interior angles: \n";
 
     //Push input to variable
     std::cin  >> angle1 >> angle2 >> angle3;

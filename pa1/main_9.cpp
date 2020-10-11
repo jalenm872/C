@@ -7,9 +7,6 @@ int main()
     //Variables
     int age;
     
-    //Ask user for age
-    std::cout << "Enter age: \n";
-    
     //User input as age
     std::cin >> age;
     

@@ -4,9 +4,7 @@ int main()
 {
     //Positive/Negative/Neither?
     int a_variable; //User Input
-    
-    std::cout << "Enter an interger: \n";
-    
+
     std::cin >> a_variable;
     
     if(a_variable > 0){

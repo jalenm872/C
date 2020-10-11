@@ -9,7 +9,7 @@ int main()
     double cord2;
     
     //Ask user for cords
-    std::cout << "Enter x-y coordinates for quadrant: \nExample: 1 2 \n";
+    //std::cout << "Enter x-y coordinates for quadrant: \nExample: 1 2 \n";
     
     //Inputs as variables
     std::cin >> cord1 >> cord2;

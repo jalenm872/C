@@ -8,9 +8,6 @@ int main()
     int a_variable;
     int b_variable;
     
-    //Ask user for interger
-    std::cout << "Enter an interger: \n";
-    
     //Input as variable
     std::cin >> a_variable;
     

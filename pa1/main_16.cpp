@@ -11,7 +11,7 @@ int main()
     double newtemp;
     
     //Ask user for decimal and char for C or F
-    std::cout << "Enter temperature: \nExample: (72 F)\n";
+    //std::cout << "Enter temperature: \nExample: (72 F)\n";
     
     //Input as variables
     std::cin >> temp >> type;

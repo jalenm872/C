@@ -11,7 +11,7 @@ int main()
     double average;
     
     //Ask user for three decimals
-    std::cout << "Enter three decimals values for an average: \n";
+    //std::cout << "Enter three decimals values for an average: \n";
     
     //Input as variables
     std::cin >> num_1 >> num_2 >> num_3;

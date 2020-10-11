@@ -10,7 +10,7 @@ int main()
     int year;
     
     //Ask user for month (written), day, year
-    std::cout << "Enter number month, day, and year \nExample (1 1 2000) \n";
+    //std::cout << "Enter number month, day, and year \nExample (1 1 2000) \n";
     
     //Input as variables
     std::cin >> month >> day >> year;

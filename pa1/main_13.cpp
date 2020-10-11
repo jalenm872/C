@@ -9,7 +9,7 @@ int main(){
     int num_3;
     
     //Ask user for three intergers
-    std::cout << "Enter three intergers: \n";
+    //std::cout << "Enter three intergers: \n";
     
     //User input as variables'
     std::cin >> num_1 >> num_2 >> num_3;

@@ -8,7 +8,7 @@ int main()
     char lettergrade;
     
     //Ask for user input
-    std::cout << "Enter letter grade: \n";
+    //std::cout << "Enter letter grade: \n";
     
     //User input as variable
     std::cin >> lettergrade;

@@ -8,9 +8,6 @@ int main()
     int b_variable;
     int c_variable;
 
-    //Ask user for a_variable and b_variable
-    std::cout << "Enter two numbers to subtract: \n";
-
     //Set user input as a_variable and b_variable
 
     std::cin >> a_variable >> b_variable;
