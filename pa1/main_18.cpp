@@ -16,14 +16,9 @@ int main()
     std::cin >> day >> month >> year;
 
     //Math 
-    //Century
-    int century = year/100;
-    //Yearpart
-    int yearpart = year % 100;
-
     //Month Exceptions
     //January and February are 13 and 14 and previous year
-    if (month== 1){
+    if (month == 1){
         month = 13;
         year = year - 1;
     }
@@ -31,6 +26,11 @@ int main()
         month = 14;
         year = year - 1;
     }
+
+    //Century
+    int century = year/100;
+    //Yearpart
+    int yearpart = year % 100;
 
     //Weekday
     int weekday = ((day + (((month +1)*26)/10)+yearpart+(yearpart/4)+(century/4) + 5 * century)%7);

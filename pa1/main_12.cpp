@@ -21,7 +21,7 @@ int main()
     average = (num_1 + num_2 + num_3)/3;
     
     //Output
-    std::cout << "The average of " << std::fixed << std::setprecision(7) << num_1 << ", " << num_2 << ", and " << num_3 << " is " << average << "\n";
+    std::cout << "The average of " << std::fixed << std::setprecision(4) << num_1 << ", " << num_2 << ", and " << num_3 << " is " << average << "\n";
     
     return 0;
 }

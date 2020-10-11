@@ -15,7 +15,7 @@ int main()
     b_variable = a_variable % 10;
     
     //If Statement and output result
-    if (b_variable == 9){
+    if (b_variable == 9 || b_variable == -9){
         std::cout << a_variable << " is good\n";
     }
     else{
