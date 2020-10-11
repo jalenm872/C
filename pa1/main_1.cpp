@@ -19,7 +19,7 @@ int main()
     c_variable = a_variable + b_variable;
 
     //Output of addition
-    std::cout << a_variable << " + " << b_variable << " = " << c_variable << "\n";
+    std::cout << a_variable << " + " << b_variable << " = " << c_variable;
 
     return 0;
 
