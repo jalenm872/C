@@ -7,7 +7,7 @@ int main()
     //Variables
     int num;
     
-    //Ask user for number
+    //Ask user for number digit
     std::cout << "Enter digit [0,9] \n";
     
     //Set input as variable
