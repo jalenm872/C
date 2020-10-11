@@ -11,25 +11,24 @@ int main()
     char operator_variable;
     
     //Ask user for a_variable, b_variable, and operator
-    std::cout << "Enter two intergers: \n";
+    std::cout << "Enter two intergers and an operator: \nExample ( 2 5 * )\n";
     
     //Set user inputs to a_varibale and b_variable
-    std::cin >> a_variable >> b_variable;
+    std::cin >> a_variable >> b_variable >> operator_variable;
     
-    //Ask user for operator
-    std::cout << "Enter an operator: \n";
-    
-    //Set user input to c_variable
-    std::cin >> c_variable;
-    
-    //Math Work and output 
-    if (operator_variable == +){
+    //Math Work and output
+
+    if (operator_variable == '+'){
         c_variable = a_variable + b_variable;
         std::cout << a_variable << " + " << b_variable << " = " << c_variable << "\n";
     }
-    else if (operator_variable = '-' ){
+    else if (operator_variable == '-' ){
         c_variable = a_variable - b_variable;
         std::cout << a_variable << " - " << b_variable << " = " << c_variable << "\n";
+    }
+    else if (operator_variable == '*' ){
+        c_variable = a_variable * b_variable;
+        std::cout << a_variable << " * " << b_variable << " = " << c_variable << "\n";
     }
     else {
         c_variable = a_variable / b_variable;

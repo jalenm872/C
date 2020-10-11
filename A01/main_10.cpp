@@ -2,50 +2,52 @@
 
 int main()
 {
-    //Word For Number
+    //Word for number
     
     //Variables
     int num;
     
-    //Ask user for number (Capital first letter)
-    std::cout << "Enter number 0-9 \n";
+    //Ask user for number
+    std::cout << "Enter digit [0,9] \n";
     
     //Set input as variable
     std::cin >> num;
     
-    //If Statement
-    if (num == 0){
-        std::cout << "Zero";
+    //Switch Statement
+    switch(num){
+        case 0:
+            std::cout << "Zero \n";
+            break;
+        case 1:
+            std::cout << "One \n";
+            break;
+        case 2:
+            std::cout << "Two \n";
+            break;
+        case 3:
+            std::cout << "Three \n";
+            break;
+        case 4:
+            std::cout << "Four \n";
+            break;
+        case 5:
+            std::cout << "Five \n";
+            break;
+        case 6:
+            std::cout << "Six \n";
+            break;
+        case 7:
+            std::cout << "Seven \n";
+            break;
+        case 8:
+            std::cout << "Eight \n";
+            break;
+        case 9:
+            std::cout << "Nine \n";
+            break;
+        default:
+            std::cout << "Not a valid number \n";
     }
-    else if (num == 1){
-        std::cout << "One";
-    }
-    else if (num == 2){
-        std::cout << "Two";
-    }
-    else if (num == 3){
-        std::cout << "Three";
-    }
-    else if (num == 4){
-        std::cout << "Four";
-    }
-    else if (num == 5){
-        std::cout << "Five";
-    }
-    else if (num == 6){
-        std::cout << "Six";
-    }
-    else if (num == 7){
-        std::cout << "Seven";
-    }
-    else if (num == 8){
-        std::cout << "Eight";
-    }
-    else if (num == 9){
-        std::cout << "Nine";
-    }
-    else{
-        std::cout << "Not a valid number. \n";
-    }
+
     return 0;
 }

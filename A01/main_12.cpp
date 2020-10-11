@@ -5,10 +5,10 @@ int main()
     //Average
     
     //Variables
-    float num_1;
-    float num_2;
-    float num_3;
-    float average;
+    double num_1;
+    double num_2;
+    double num_3;
+    double average;
     
     //Ask user for three decimals
     std::cout << "Enter three decimals values for an average: \n";
@@ -20,7 +20,7 @@ int main()
     average = (num_1 + num_2 + num_3)/3;
     
     //Output
-    std::cout << "The average of " << num_1 << ", " << num_2 << ", " << num_3 << " is " << average;
+    std::cout << "The average of " << num_1 << ", " << num_2 << ", and " << num_3 << " is " << average << "\n";
     
     return 0;
 }
