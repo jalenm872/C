@@ -21,17 +21,17 @@ int main()
     //Comparison
     if (total == 180){
         if (angle1 < 90 && angle2 < 90 && angle3 < 90){
-            std::cout << "Acute \n";
+            std::cout << "Acute\n";
         }
         else if(angle1 == 90 || angle2 == 90 || angle3 == 90){
-            std::cout << "Right \n";
+            std::cout << "Right\n";
         }
         else if(angle1 > 90 || angle2 > 90 || angle3 > 90){
-            std::cout << "Obtuse \n";
+            std::cout << "Obtuse\n";
         }
     }
     else{
-        std::cout << "This triangle is impossible \n";
+        std::cout << "This triangle is impossible\n";
     }
 
     return 0;

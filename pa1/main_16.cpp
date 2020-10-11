@@ -20,13 +20,13 @@ int main()
     if (type == 'F'){
         newtemp = ((temp - 32)*5)/9;
         char othertype = 'C';
-        std::cout << std::fixed << std::showpoint << std::setprecision(4) << temp << " Degree(s) " << type << " is equal to " << newtemp << " degree(s) " << othertype << "\n";
+        std::cout << std::fixed << std::showpoint << std::setprecision(4) << temp << " degree(s) " << type << " is equal to " << newtemp << " degree(s) " << othertype << "\n";
     }
     else{
         //If type is C
         newtemp = ((temp * 9)/5) + 32;
         char othertype = 'F';
-        std::cout << std::fixed << std::showpoint << std::setprecision(4) << temp << " Degree(s) " << type << " is equal to " << newtemp << " degree(s) " << othertype << "\n";
+        std::cout << std::fixed << std::showpoint << std::setprecision(4) << temp << " degree(s) " << type << " is equal to " << newtemp << " degree(s) " << othertype << "\n";
     }
     return 0;
 }

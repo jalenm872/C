@@ -16,13 +16,13 @@ int main(){
     
     //Comparisons
     if (num_1 <= num_2 && num_1 <= num_3){
-        std::cout << "The smallest number is " << num_1 << "\n";
+        std::cout << "The smallest number entered was " << num_1 << "\n";
     }
     else if (num_2 <= num_1 && num_2 <= num_3){
-        std::cout << "The smallest number is " << num_2 << "\n";
+        std::cout << "The smallest number entered was " << num_2 << "\n";
     }
     else{
-        std::cout << "The smallest number is " << num_3 << "\n";
+        std::cout << "The smallest number entered was " << num_3 << "\n";
     }
     
     //Out statment

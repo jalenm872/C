@@ -18,13 +18,13 @@ int main(){
     
     //Comparisons
     if (ftemp <= 32){
-        std::cout << "It is cold out \n";
+        std::cout << "It is cold out\n";
     }
     else if(ftemp > 32 && ftemp <= 65){
-        std::cout << "Wear a jacket \n";
+        std::cout << "Wear a jacket\n";
     }
     else if(ftemp > 65){
-        std::cout << "It is nice out \n";
+        std::cout << "It is nice out\n";
     }
     
     return 0;

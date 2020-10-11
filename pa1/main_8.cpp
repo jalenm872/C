@@ -16,9 +16,9 @@ int main()
     
     //If Statement and output result
     if (b_variable == 9){
-        std::cout << a_variable << " is good. \n";
+        std::cout << a_variable << " is good\n";
     }
     else{
-        std::cout << a_variable << " is no good. \n";
+        std::cout << a_variable << " is no good\n";
     }
 }

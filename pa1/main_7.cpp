@@ -15,9 +15,9 @@ int main()
     b_variable = a_variable % 8;
     
     if (a_variable > 100 && b_variable == 0){
-        std::cout << a_variable << " satisfies the criteria. \n";
+        std::cout << a_variable << " satisfies the criteria\n";
     }
     else{
-        std::cout << a_variable << " does not satisfy the criteria. \n";
+        std::cout << a_variable << " does not satisfy the criteria\n";
     }
 }

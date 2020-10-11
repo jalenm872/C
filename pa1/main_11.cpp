@@ -17,7 +17,7 @@ int main()
     
     //If statement for months
     if (month == 1){
-        std::cout << "Janurary " << day << ", " << year << "\n";
+        std::cout << "January " << day << ", " << year << "\n";
     }
     else if (month == 2){
         std::cout << "February " << day << ", " << year << "\n";

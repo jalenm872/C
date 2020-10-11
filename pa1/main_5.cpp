@@ -16,10 +16,10 @@ int main()
 
     //If Odd or Even
     if (b_variable == 0){
-        std::cout << a_variable << " is even. \n";
+        std::cout << a_variable << " is even\n";
     }
     else{
-        std::cout << a_variable << " is odd. \n";
+        std::cout << a_variable << " is odd\n";
     }
     return 0;
 }

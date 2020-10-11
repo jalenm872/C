@@ -36,28 +36,28 @@ int main()
     int weekday = ((day + (((month +1)*26)/10)+yearpart+(yearpart/4)+(century/4) + 5 * century)%7);
 
     if (weekday == 0){
-        std::cout << "Saturday \n";
+        std::cout << "Saturday\n";
     }
     else if(weekday == 1){
-        std::cout << "Sunday \n";
+        std::cout << "Sunday\n";
     }
     else if(weekday == 2){
-        std::cout << "Monday \n";
+        std::cout << "Monday\n";
     }
     else if(weekday == 3){
-        std::cout << "Tuesday \n";
+        std::cout << "Tuesday\n";
     }
     else if(weekday == 4){
-        std::cout << "Wednesday \n";
+        std::cout << "Wednesday\n";
     }
     else if(weekday == 5){
-        std::cout << "Thursday \n";
+        std::cout << "Thursday\n";
     }
     else if (weekday == 6){
-        std::cout << "Friday \n";
+        std::cout << "Friday\n";
     }
     else{
-        std::cout << "Error";
+        std::cout << "Error\n";
     }
     return 0;
 }
