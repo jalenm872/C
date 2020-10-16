@@ -9,6 +9,7 @@ float collatz(int n){
         else{
             n = n*3 +1;
         }
-        steps ++;
+        return steps ++;
     }
+    std::cout << steps;
 }
