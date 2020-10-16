@@ -8,8 +8,10 @@ int main(){
     //User input
     std::cin >> rows;
     //If and nested for loops
-    for (int i; i <= rows; i++){
-        for(int j; j <= i; j++){
+    int i = 0;
+    for (i; i <= rows; i++){
+        int j = 0;
+        for(j; j <= i; j++){
             std::cout << "+ ";
         }
         std::cout << "LOL";
