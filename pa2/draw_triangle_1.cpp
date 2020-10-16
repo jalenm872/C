@@ -13,7 +13,7 @@ int main(){
             for(int j; j <= i; j++){
                 std::cout << "+ ";
             }
-            std::cout << "\n";
+            std::cout << "LOL";
         }
     }
     else
