@@ -6,12 +6,12 @@ int main(){
     //Variable
     int rows;
     //User input
-    std::cin << rows;
+    std::cin >> rows;
     //If and nested for loops
     if(rows < 20 || rows > 0){
         for (int i; i <= rows; i++){
             for(int j; j <= i; j++){
-                std::cout << '+';
+                std::cout << "+";
             }
             std::cout << "\n";
         }
