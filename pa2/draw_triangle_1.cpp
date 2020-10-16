@@ -8,7 +8,7 @@ int main(){
     //User input
     std::cin << rows;
     //If and nested for loops
-    if(n < 20 || n > 0){
+    if(rows < 20 || rows > 0){
         for (int i; i <= rows; i++){
             for(int j; j <= i; j++){
                 std::cout << '+';
