@@ -4,12 +4,11 @@
 //Function
 int main(){
     //Variable
-    int rows;
+    int row;
     //User input
-    std::cin >> rows;
+    std::cin >> row;
     //If and nested for loops
-    for (int i; i <= rows; i++){
-        int j = 0;
+    for (int i; i <= row; i++){
         for(int j; j <= i; j++){
             std::cout << "+ ";
         }
