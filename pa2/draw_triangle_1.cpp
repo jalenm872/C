@@ -8,18 +8,11 @@ int main(){
     //User input
     std::cin >> rows;
     //If and nested for loops
-    if(rows < 20 && rows > 0){
-        for (int i; i <= rows; i++){
-            for(int j; j <= i; j++){
-                std::cout << "+ ";
-            }
-            std::cout << "LOL";
+    for (int i; i <= rows; i++){
+        for(int j; j <= i; j++){
+            std::cout << "+ ";
         }
-    }
-    else
-    //Invalid row input
-    {
-        std::cout << "Error\n";
+        std::cout << "LOL";
     }
     return 0;
 }
