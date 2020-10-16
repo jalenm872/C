@@ -8,6 +8,6 @@ int main(){
             c += j;
         }
     }
-    std::cout << j;
+    std::cout << c;
     return 0;
 }
