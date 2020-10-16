@@ -1,6 +1,7 @@
 #include <iostream>
 
-float collatz(int n){
+int n = 10
+float collatz(n){
     int steps = 0;
     while (n != 1){
         if ( n % 2 == 0){

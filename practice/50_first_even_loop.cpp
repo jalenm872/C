@@ -4,9 +4,10 @@
 
 int main()
 {
+    int sum = 0;
     for(int i = 0; i <= 50 ; i++){
         if( i % 2 == 0){
-            std::cout << i << "\n";
+            sum += i;
         }
     }
 }
