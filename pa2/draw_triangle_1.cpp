@@ -11,7 +11,7 @@ int main(){
     if(rows < 20 && rows > 0){
         for (int i; i <= rows; i++){
             for(int j; j <= i; j++){
-                std::cout << "+";
+                std::cout << "+ ";
             }
             std::cout << "\n";
         }
