@@ -1,13 +1,17 @@
 #include <iostream>
 
+//Factorial
 int main(){
     int num;
-    double limit = 2,147,483,647;
+    int total = 1;
+    //Limit
+    double limit = 2147483647;
     std::cin >> num;
 
-    for(int i = 1; i <= num; i++){
-        num = num * i;
+    for(int i = 1; i < num; i++){
+        total = total * (i+1);
     }
+    std::cout << total << std::endl;
     if (num >= limit){
         std::cout << "Can't handle this\n";
     }
