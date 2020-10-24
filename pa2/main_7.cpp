@@ -1,15 +1,12 @@
 #include <iostream>
 
-int main(){
+//Sum of Even Digits Function
+
+double main(){
     double num;
+    int sum = 0;
     std::cin >> num;
-    if (num >= 0 && num <= 4294967296){
-        for(double i = 1; i <= 4294967296; i *=10){
-            int digit = num / i;
-            if (digit % 2){
-                int sum = sum + digit;
-            }
-        }
-        
+    std::reverse(num);
+    std::cout << num;
     }
 }

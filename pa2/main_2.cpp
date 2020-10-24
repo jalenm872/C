@@ -11,14 +11,20 @@ int main(){
     if(row > 0 && row < 20){
         //Rows
         for(int i = 1; i <= row; i++){
-            //Columns
+            //Spaces in Each Column
+            for(int s = row - i; s > 0; s--){
+                std::cout << "  ";
+            }
+            //Columns with Star
             for(int j = 1; j <= i; j++){
                 std::cout << "* ";
-        }
+            }
+        //End Each Row
         std::cout << std::endl;
     }
     return 0;
     }
+    //Invalid Input
     else{
         std::cout << "Error\n";
     }

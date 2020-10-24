@@ -7,15 +7,20 @@ int main(){
     //Number of rows
     std::cin >> num;
     if(num < 10 && num > 0){
+        //Rows
         for(int i=1; i <= num; i++){
+            //Columns
             for (int j = 1; j <= num; j++){
-                if(j == i || j == ((i+num)-1) || j == (i-num)+1){
+                //If Row = Column 
+                if(j == i || j == (num + 1 - i)){
                     std::cout << "*";
                 }
+                //Spaces
                 else{
                     std::cout << " ";
                 }
             }
+            //Ends each row
             std::cout << "\n";
         }
     }
