@@ -5,9 +5,10 @@ int main(){
     double month = 0;
     std::cin >> loan >> interest >> payment;
     for(int i = 0; i < loan; i++){
-        loan = loan + loan * (1 + interest);
+        loan = loan + (loan * (1 + interest));
         //Loan amount after every month paid
         loan = loan - payment;
+        month++;
     }
     std::cout << month << std::endl;
     return 0;

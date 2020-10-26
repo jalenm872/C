@@ -11,19 +11,18 @@ int main(){
     //Bool statement for prime is true or false
     bool prime = true;
     //Divide the input by 2
-    int num = n/2;
 
     //If statement
-    if(num > 1 && num <= 1000000000){
-        for(int i = 2; i < num; i++){
+    if(n > 1 && n <= 1000000000){
+        for(int i = 2; i < n; i++){
             //If is divisible by 2 to num then it is not prime
-            if (num % i == 0){
+            if (n % i == 0){
                 prime = false;
                 break;
             }
         }
     }
-    else if (num == 1 || num == 0){
+    else if (n == 1 || n == 0){
         prime = false;
     }
 

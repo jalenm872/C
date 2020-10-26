@@ -8,16 +8,16 @@ int main(){
     //User input
     std::cin >> row;
     //If and nested for loops
-    if(row > 0 && row < 20){
+    if(row > 0 && row <= 20){
         //Rows
         for(int i = 1; i <= row; i++){
             //Spaces in Each Column
             for(int s = row - i; s > 0; s--){
-                std::cout << "  ";
+                std::cout << " ";
             }
             //Columns with Star
             for(int j = 1; j <= i; j++){
-                std::cout << "* ";
+                std::cout << "*";
             }
         //End Each Row
         std::cout << std::endl;

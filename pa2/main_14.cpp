@@ -17,7 +17,6 @@ int main(){
         std::cout << "True\n";
         }
         else{
-            std::cout << sum << std::endl;
             std::cout << "False\n";
         }
     }

@@ -2,20 +2,35 @@
 
 //Character Pyramid
 int main(){
-    char end, start = 'A';
+    char end;
+    char start = 'A';
+    int count, count1 = 0;
+    int k = 0;
     std::cin >> end;
-    int space = 1;
-    for(int i = 1; i <= end; i++){
-        for(int c = 1; c <= end; c++){
-            std::cout << "  "
-        }
+    int rows = (-(start-end));
+    std::cout << rows;
 
-        for(int j = 1; j <= i; j++){
-            std::cout << end << " ";
+    for(int i = 1; i <= (end-'A'+1); i++){
+        for(int space = 1; space <= end-i; space++){
+            std::cout << "  ";
+            count++;
         }
-        end++;
+        while(k != 2*i-1){
+            if(count <= end-1){
+                std::cout << i+k << " ";
+                count++;
+            }
+            else{
+                count1++;
+                std::cout << i+k-2*count1 << " ";
+            }
+            ++k;
+        }
+        count1 = count = k = 0;
 
-        std::cout << "\n";
+        std::cout << std::endl;
     }
 
+
+    return 0;
 }

@@ -1,60 +1,41 @@
 #include <iostream>
-#include <math.h>
+#include <cmath>
 
 //Armstong Number
 int main(){
     //Variables
-    int num;
-    bool armstrong;
-    int numDigits;
+    int num, remainder, powernum;
+    int sum = 0;
+    int numDigits = 0;
 
     //User Input
     std::cin >> num;
     
-    //Function Calls
-    numDigits = countDigits(num);
-    armstrong = armstrongFunction(num);
+    //Finds number of digits
+    while(num != 0){
+        num /= 10;
+        numDigits++;
+    }
+
+
+    //std::cout << power;
+
+    //Each digit to the number of digits power
+    for(int i = num; i > 0; i /=10){
+        //Have to round to an interger
+        powernum = pow(remainder, numDigits);
+        sum = sum + powernum;
+        num /= 10;
+    }
+
+    std::cout << sum;
 
     //If statements for checking if true or false
-    if(armstrong == true){
+    if(sum == num){
         std::cout << "True\n";
     }
-    else if (armstrong == false){
+    else{
         std::cout << "False\n";
     }
     return 0;
-}
-
-int countDigits(int num){
-    int count = 0;
-    while(num != 0){
-        num = num / 10;
-        ++count;
-    }
-    return count;
-}
-
-//Function to check if an armstrong, needs a interger as parameter.
-bool armstrongFunction(int num){
-    //Temp variable for the number
-    int temp;
-    //Sum interger for adding up all digits
-    int sum = 0;
-    //Variable for each digit
-    int digit;
-    //Bool to identify true or false
-    bool armstrongValue;
-
-    temp = num;
-
-    for(int i = 0; i < num; i++){
-        digit = temp % 10;
-        sum = sum + pow(digit, numDigits);
-    }
-    if (sum == num){
-        armstrongValue = true;
-    }
-    else{
-        armstrongValue = false;
-    }
 }
