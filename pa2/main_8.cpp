@@ -18,11 +18,11 @@ int main(){
                     }
                     //Spaces
                     else{
-                    std::cout << " ";
+                        std::cout << " ";
                     }
                 }
                 //Ends each row
-                std::cout << "\n";
+                std::cout << std::endl;
             }
         
         }

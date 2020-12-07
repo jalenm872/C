@@ -15,7 +15,7 @@ int main(){
     if (total <= limit && total > 0){
         std::cout << total << std::endl;
     }
-    else if(total > limit){
+    else if(total > limit || total == limit){
         std::cout << "Can't handle this\n";
     }
     return 0;
