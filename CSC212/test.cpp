@@ -1,6 +1,7 @@
 #include <iostream>
 
 int main(){
-    string name;
-
+    char name;
+    name = 'Jalen';
+    std::cout << name;
 }
