@@ -1,7 +1,7 @@
 #include <iostream>
-
-int main(){
-    char name;
-    name = 'Jalen';
-    std::cout << name;
+using namespace std;
+int main() 
+{
+    cout << "Hello world!";
+    return 0;
 }
