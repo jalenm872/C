@@ -19,6 +19,8 @@ int main(int argc, char *argv[])
         return 0;
     }
     else{
+
+        printf("The size of program input is: %d", int argc);
         printf("Hello");
     }
     return 0;
