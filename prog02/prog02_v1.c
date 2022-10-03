@@ -3,6 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 
+//Structure for input
 struct Input
 {
     //Data
@@ -13,48 +14,43 @@ struct Input
 
 int main(int argc, char *argv[])
 {
+    //If there is no data for names
     if(argc < 2){
-        printf("Need argument!\n");
+        printf("Need argument!");
         return 0;
     }
     else{
         //Initialize structure
         struct Input inputList[argc];
-
-        size_t inputLength = 0;
         
-        int longCount = 0;
         //Store Longitude Inputs
+        int longCount = 0;
         for(int i = 1; i <= argc - 1; i += 3){
-            //inputLength = inputLength + strlen(argv[i]);
             inputList->longitude[longCount] = argv[i];
-            //printf("Input: %s\n", argv[i]);
             longCount++;
         }
 
-        int latCount = 0;
         //Store Latitude Inputs
+        int latCount = 0;
         for(int i = 2; i <= argc - 1; i += 3){
             inputList->latitude[latCount] = argv[i];
-            //printf("Input: %s\n", argv[i]);
             latCount++;
         }
 
+        //Store Name inputs
         int nameCount = 0;
-        //Store name inputs
         for(int i = 3; i <= argc - 1; i += 3){
             inputList->location[nameCount] = argv[i];
-            //printf("Input: %s\n", argv[i]);
             nameCount++;
-
         }
 
+        //Query While Loop
         char queryInput;
         int queryNumber;
         char queryName;
 
         //Query Example "Query: LIST"
-        while(printf("Query: "), scanf("%s", &queryInput)){
+        while(scanf("%s", &queryInput)){
             if(strcmp(&queryInput, "END") == 0){
                 return 0;
             }
@@ -68,7 +64,7 @@ int main(int argc, char *argv[])
                 scanf("%d", &queryNumber);
                 for(int i = 0; i <= nameCount - 1; i++){
                     if(atoi(inputList->longitude[i]) == queryNumber){
-                        //print out example: "Image 000. Location: -23, 135. Name: Kingston
+                        //Example: "Image 000. Location: -23, 135. Name: Kingston
                         printf("Image %03d. Location: %4s,%4s. Name: %4s\n", i, inputList->longitude[i], inputList->latitude[i], inputList->location[i]);
                     }
                 }
@@ -82,23 +78,20 @@ int main(int argc, char *argv[])
                     }
                 }
             }
+            // Query: "-n <name>"
             else if(strcmp(&queryInput, "-n") == 0){
                 scanf("%s", &queryName);
-                //printf("%s\n", &queryName);
-                //printf("Hi\n");
                 for(int i = 0; i <= nameCount - 1; i++){
-                    //Not working
                     if(strcmp(inputList->location[i], &queryName) == 0){
                         printf("Image %03d. Location: %4s,%4s. Name: %4s\n", i, inputList->longitude[i], inputList->latitude[i], inputList->location[i]);
                     }
                 }
             }
             else{
-                printf("Invalid query\n");
+                printf("Invalid query");
                 return 0;
             }
         }
-
     }
     return 0;
-}
+} 
